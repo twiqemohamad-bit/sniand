@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/login"
+  to = "/.netlify/functions/login"
+  status = 200
+
+[[redirects]]
+  from = "/api/verify"
+  to = "/.netlify/functions/verify"
+  status = 200
+
+[[redirects]]
+  from = "/api/submit-id"
+  to = "/.netlify/functions/submit-id"
+  status = 200
